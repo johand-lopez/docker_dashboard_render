@@ -1,21 +1,46 @@
-# Imagen base ligera de Python
+# ======================================================
+# Imagen base ligera
+# ======================================================
 FROM python:3.10-slim
 
-# Configuración para evitar problemas con logs
-ENV PYTHONUNBUFFERED=1
+# Evitar prompts interactivos
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Crear directorio de trabajo dentro del contenedor
+# ======================================================
+# Instalar dependencias del sistema necesarias para GeoPandas y GDAL
+# ======================================================
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    gdal-bin \
+    libgdal-dev \
+    python3-dev \
+    python3-gdal \
+    && rm -rf /var/lib/apt/lists/*
+
+# ======================================================
+# Establecer directorio de trabajo
+# ======================================================
 WORKDIR /app
 
-# Copiar archivos de requisitos e instalarlos
+# ======================================================
+# Copiar los archivos de dependencias e instalar
+# ======================================================
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python3 -m ensurepip
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-# Copiar todos los archivos del proyecto
+# ======================================================
+# Copiar el resto del proyecto
+# ======================================================
 COPY . .
 
-# Exponer el puerto 8501 (el de Streamlit)
+# ======================================================
+# Exponer el puerto (Render lo define dinámicamente)
+# ======================================================
 EXPOSE 8501
 
-# Comando de inicio (Streamlit corre app.py)
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# ======================================================
+# Comando para ejecutar Streamlit
+# ======================================================
+CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
