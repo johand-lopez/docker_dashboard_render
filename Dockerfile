@@ -1,6 +1,3 @@
-# =====================================
-# 🐳 Dockerfile para Streamlit + Plotly
-# =====================================
 
 # Imagen base ligera de Python
 FROM python:3.10-slim
