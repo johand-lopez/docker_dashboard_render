@@ -1,7 +1,5 @@
 streamlit
 pandas
-plotly
 geopandas
+plotly
 shapely
-fiona
-pyproj
