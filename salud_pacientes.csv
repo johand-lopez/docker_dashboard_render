@@ -1,0 +1,201 @@
+ID,Departamento,Latitud,Longitud,Edad,Genero,Diagnóstico,Frecuencia_Visitas
+1,Córdoba,8.749,-75.8814,42,Otro,Diabetes,8
+2,Cundinamarca,4.6814,-74.1371,79,Masculino,Asma,11
+3,Bolívar,10.3997,-75.5144,87,Otro,Hipertensión,5
+4,Cundinamarca,4.6814,-74.1371,86,Otro,Hipertensión,7
+5,Bogotá D.C.,4.711,-74.0721,10,Otro,Saludable,4
+6,Nariño,1.2136,-77.2811,87,Femenino,Diabetes,7
+7,Valle del Cauca,3.4516,-76.5319,4,Masculino,Hipertensión,11
+8,Bogotá D.C.,4.711,-74.0721,57,Femenino,Asma,9
+9,Córdoba,8.749,-75.8814,38,Masculino,Asma,0
+10,Cundinamarca,4.6814,-74.1371,47,Otro,Saludable,2
+11,Valle del Cauca,3.4516,-76.5319,93,Femenino,Asma,3
+12,Santander,7.1254,-73.1198,79,Femenino,Hipertensión,10
+13,Antioquia,6.2442,-75.5812,19,Femenino,Hipertensión,8
+14,Bolívar,10.3997,-75.5144,92,Otro,Hipertensión,7
+15,Bolívar,10.3997,-75.5144,80,Masculino,Diabetes,7
+16,Antioquia,6.2442,-75.5812,18,Otro,Asma,1
+17,Valle del Cauca,3.4516,-76.5319,59,Femenino,Asma,6
+18,Córdoba,8.749,-75.8814,25,Femenino,Diabetes,11
+19,Bolívar,10.3997,-75.5144,78,Otro,Hipertensión,2
+20,Valle del Cauca,3.4516,-76.5319,24,Femenino,Asma,5
+21,Magdalena,10.591,-74.1869,14,Femenino,Hipertensión,3
+22,Nariño,1.2136,-77.2811,83,Masculino,Diabetes,5
+23,Nariño,1.2136,-77.2811,93,Masculino,Hipertensión,3
+24,Santander,7.1254,-73.1198,20,Masculino,Saludable,2
+25,Nariño,1.2136,-77.2811,46,Masculino,Diabetes,1
+26,Bolívar,10.3997,-75.5144,34,Masculino,Hipertensión,3
+27,Antioquia,6.2442,-75.5812,43,Masculino,Diabetes,9
+28,Antioquia,6.2442,-75.5812,5,Femenino,Asma,1
+29,Magdalena,10.591,-74.1869,74,Femenino,Saludable,6
+30,Bolívar,10.3997,-75.5144,22,Masculino,Diabetes,0
+31,Bolívar,10.3997,-75.5144,38,Otro,Hipertensión,10
+32,Cundinamarca,4.6814,-74.1371,72,Masculino,Asma,0
+33,Magdalena,10.591,-74.1869,17,Femenino,Hipertensión,4
+34,Magdalena,10.591,-74.1869,99,Otro,Hipertensión,6
+35,Cundinamarca,4.6814,-74.1371,39,Otro,Diabetes,0
+36,Atlántico,10.9685,-74.7813,35,Otro,Diabetes,11
+37,Nariño,1.2136,-77.2811,27,Femenino,Hipertensión,11
+38,Bolívar,10.3997,-75.5144,63,Otro,Diabetes,3
+39,Antioquia,6.2442,-75.5812,82,Femenino,Hipertensión,4
+40,Valle del Cauca,3.4516,-76.5319,93,Femenino,Diabetes,1
+41,Córdoba,8.749,-75.8814,57,Masculino,Saludable,6
+42,Valle del Cauca,3.4516,-76.5319,37,Femenino,Diabetes,3
+43,Bogotá D.C.,4.711,-74.0721,78,Otro,Hipertensión,7
+44,Antioquia,6.2442,-75.5812,43,Femenino,Asma,0
+45,Bogotá D.C.,4.711,-74.0721,75,Femenino,Diabetes,9
+46,Córdoba,8.749,-75.8814,1,Masculino,Saludable,0
+47,Cundinamarca,4.6814,-74.1371,72,Masculino,Saludable,0
+48,Antioquia,6.2442,-75.5812,34,Femenino,Saludable,3
+49,Bolívar,10.3997,-75.5144,0,Femenino,Saludable,0
+50,Cundinamarca,4.6814,-74.1371,45,Femenino,Hipertensión,4
+51,Nariño,1.2136,-77.2811,59,Masculino,Saludable,5
+52,Bogotá D.C.,4.711,-74.0721,62,Masculino,Asma,6
+53,Valle del Cauca,3.4516,-76.5319,94,Otro,Diabetes,7
+54,Cundinamarca,4.6814,-74.1371,91,Otro,Saludable,7
+55,Bogotá D.C.,4.711,-74.0721,44,Otro,Diabetes,1
+56,Córdoba,8.749,-75.8814,56,Otro,Hipertensión,11
+57,Nariño,1.2136,-77.2811,36,Masculino,Diabetes,3
+58,Bogotá D.C.,4.711,-74.0721,6,Masculino,Hipertensión,6
+59,Atlántico,10.9685,-74.7813,15,Femenino,Hipertensión,8
+60,Magdalena,10.591,-74.1869,49,Otro,Diabetes,8
+61,Cundinamarca,4.6814,-74.1371,13,Femenino,Saludable,10
+62,Magdalena,10.591,-74.1869,96,Femenino,Asma,2
+63,Santander,7.1254,-73.1198,5,Masculino,Diabetes,11
+64,Valle del Cauca,3.4516,-76.5319,60,Femenino,Asma,6
+65,Santander,7.1254,-73.1198,20,Femenino,Diabetes,3
+66,Bolívar,10.3997,-75.5144,9,Masculino,Asma,8
+67,Santander,7.1254,-73.1198,31,Masculino,Diabetes,6
+68,Bolívar,10.3997,-75.5144,5,Masculino,Asma,5
+69,Santander,7.1254,-73.1198,1,Masculino,Asma,8
+70,Antioquia,6.2442,-75.5812,38,Otro,Diabetes,6
+71,Atlántico,10.9685,-74.7813,48,Otro,Diabetes,10
+72,Antioquia,6.2442,-75.5812,26,Otro,Hipertensión,7
+73,Bogotá D.C.,4.711,-74.0721,55,Femenino,Asma,10
+74,Santander,7.1254,-73.1198,13,Otro,Diabetes,4
+75,Bogotá D.C.,4.711,-74.0721,22,Masculino,Saludable,3
+76,Santander,7.1254,-73.1198,84,Otro,Saludable,0
+77,Nariño,1.2136,-77.2811,50,Masculino,Hipertensión,7
+78,Atlántico,10.9685,-74.7813,93,Otro,Saludable,5
+79,Bolívar,10.3997,-75.5144,24,Otro,Diabetes,3
+80,Córdoba,8.749,-75.8814,52,Masculino,Asma,2
+81,Bolívar,10.3997,-75.5144,87,Masculino,Diabetes,4
+82,Santander,7.1254,-73.1198,10,Femenino,Saludable,3
+83,Bogotá D.C.,4.711,-74.0721,34,Femenino,Saludable,10
+84,Santander,7.1254,-73.1198,54,Femenino,Diabetes,10
+85,Valle del Cauca,3.4516,-76.5319,57,Otro,Hipertensión,6
+86,Córdoba,8.749,-75.8814,67,Otro,Diabetes,5
+87,Bolívar,10.3997,-75.5144,36,Masculino,Hipertensión,2
+88,Córdoba,8.749,-75.8814,99,Masculino,Saludable,11
+89,Antioquia,6.2442,-75.5812,76,Femenino,Asma,9
+90,Córdoba,8.749,-75.8814,8,Masculino,Asma,10
+91,Valle del Cauca,3.4516,-76.5319,27,Otro,Diabetes,11
+92,Córdoba,8.749,-75.8814,54,Masculino,Hipertensión,0
+93,Bogotá D.C.,4.711,-74.0721,45,Masculino,Saludable,6
+94,Bolívar,10.3997,-75.5144,79,Masculino,Asma,4
+95,Valle del Cauca,3.4516,-76.5319,69,Masculino,Diabetes,0
+96,Cundinamarca,4.6814,-74.1371,26,Masculino,Diabetes,0
+97,Nariño,1.2136,-77.2811,9,Femenino,Saludable,5
+98,Magdalena,10.591,-74.1869,22,Femenino,Saludable,3
+99,Bogotá D.C.,4.711,-74.0721,20,Otro,Diabetes,7
+100,Bogotá D.C.,4.711,-74.0721,89,Femenino,Diabetes,1
+101,Valle del Cauca,3.4516,-76.5319,44,Masculino,Diabetes,3
+102,Valle del Cauca,3.4516,-76.5319,2,Femenino,Hipertensión,11
+103,Antioquia,6.2442,-75.5812,58,Otro,Saludable,7
+104,Atlántico,10.9685,-74.7813,42,Femenino,Diabetes,11
+105,Antioquia,6.2442,-75.5812,98,Otro,Saludable,7
+106,Santander,7.1254,-73.1198,6,Otro,Diabetes,4
+107,Antioquia,6.2442,-75.5812,26,Otro,Diabetes,2
+108,Nariño,1.2136,-77.2811,61,Masculino,Diabetes,3
+109,Córdoba,8.749,-75.8814,41,Otro,Saludable,2
+110,Valle del Cauca,3.4516,-76.5319,96,Femenino,Diabetes,10
+111,Antioquia,6.2442,-75.5812,3,Femenino,Diabetes,1
+112,Bogotá D.C.,4.711,-74.0721,89,Femenino,Saludable,3
+113,Atlántico,10.9685,-74.7813,61,Otro,Diabetes,8
+114,Cundinamarca,4.6814,-74.1371,7,Otro,Asma,5
+115,Bolívar,10.3997,-75.5144,83,Masculino,Asma,3
+116,Antioquia,6.2442,-75.5812,16,Otro,Diabetes,0
+117,Valle del Cauca,3.4516,-76.5319,4,Femenino,Hipertensión,6
+118,Magdalena,10.591,-74.1869,62,Masculino,Saludable,1
+119,Santander,7.1254,-73.1198,8,Femenino,Diabetes,11
+120,Bolívar,10.3997,-75.5144,7,Masculino,Saludable,5
+121,Cundinamarca,4.6814,-74.1371,6,Otro,Hipertensión,9
+122,Bogotá D.C.,4.711,-74.0721,36,Masculino,Hipertensión,0
+123,Atlántico,10.9685,-74.7813,99,Otro,Saludable,6
+124,Bogotá D.C.,4.711,-74.0721,54,Otro,Hipertensión,3
+125,Cundinamarca,4.6814,-74.1371,66,Femenino,Hipertensión,10
+126,Antioquia,6.2442,-75.5812,7,Otro,Saludable,2
+127,Cundinamarca,4.6814,-74.1371,68,Otro,Hipertensión,9
+128,Nariño,1.2136,-77.2811,4,Otro,Asma,6
+129,Córdoba,8.749,-75.8814,16,Femenino,Diabetes,2
+130,Nariño,1.2136,-77.2811,57,Otro,Asma,7
+131,Bolívar,10.3997,-75.5144,62,Femenino,Asma,10
+132,Nariño,1.2136,-77.2811,26,Masculino,Diabetes,3
+133,Bolívar,10.3997,-75.5144,75,Femenino,Asma,2
+134,Santander,7.1254,-73.1198,91,Femenino,Diabetes,6
+135,Antioquia,6.2442,-75.5812,67,Otro,Diabetes,6
+136,Antioquia,6.2442,-75.5812,27,Femenino,Saludable,8
+137,Antioquia,6.2442,-75.5812,88,Masculino,Diabetes,9
+138,Cundinamarca,4.6814,-74.1371,57,Femenino,Diabetes,6
+139,Magdalena,10.591,-74.1869,49,Otro,Hipertensión,5
+140,Antioquia,6.2442,-75.5812,99,Masculino,Hipertensión,2
+141,Atlántico,10.9685,-74.7813,66,Otro,Asma,3
+142,Córdoba,8.749,-75.8814,30,Otro,Diabetes,7
+143,Valle del Cauca,3.4516,-76.5319,11,Femenino,Diabetes,5
+144,Cundinamarca,4.6814,-74.1371,54,Otro,Saludable,8
+145,Bolívar,10.3997,-75.5144,3,Masculino,Diabetes,7
+146,Antioquia,6.2442,-75.5812,93,Masculino,Saludable,7
+147,Bolívar,10.3997,-75.5144,41,Masculino,Diabetes,10
+148,Santander,7.1254,-73.1198,90,Masculino,Hipertensión,9
+149,Bogotá D.C.,4.711,-74.0721,53,Femenino,Hipertensión,9
+150,Cundinamarca,4.6814,-74.1371,21,Masculino,Hipertensión,6
+151,Antioquia,6.2442,-75.5812,0,Femenino,Asma,9
+152,Nariño,1.2136,-77.2811,47,Otro,Diabetes,10
+153,Bogotá D.C.,4.711,-74.0721,42,Otro,Hipertensión,0
+154,Santander,7.1254,-73.1198,19,Femenino,Saludable,4
+155,Bolívar,10.3997,-75.5144,17,Otro,Hipertensión,6
+156,Antioquia,6.2442,-75.5812,69,Otro,Diabetes,9
+157,Cundinamarca,4.6814,-74.1371,48,Masculino,Hipertensión,8
+158,Nariño,1.2136,-77.2811,75,Otro,Diabetes,11
+159,Magdalena,10.591,-74.1869,16,Otro,Diabetes,3
+160,Bolívar,10.3997,-75.5144,52,Femenino,Hipertensión,7
+161,Cundinamarca,4.6814,-74.1371,21,Masculino,Saludable,0
+162,Córdoba,8.749,-75.8814,81,Otro,Asma,3
+163,Nariño,1.2136,-77.2811,9,Otro,Diabetes,3
+164,Valle del Cauca,3.4516,-76.5319,23,Femenino,Asma,1
+165,Cundinamarca,4.6814,-74.1371,83,Otro,Hipertensión,10
+166,Atlántico,10.9685,-74.7813,11,Masculino,Diabetes,10
+167,Atlántico,10.9685,-74.7813,3,Masculino,Diabetes,2
+168,Santander,7.1254,-73.1198,41,Masculino,Hipertensión,2
+169,Antioquia,6.2442,-75.5812,4,Femenino,Asma,8
+170,Nariño,1.2136,-77.2811,25,Masculino,Saludable,6
+171,Atlántico,10.9685,-74.7813,99,Masculino,Hipertensión,1
+172,Santander,7.1254,-73.1198,58,Masculino,Hipertensión,8
+173,Bolívar,10.3997,-75.5144,61,Masculino,Saludable,7
+174,Bogotá D.C.,4.711,-74.0721,79,Masculino,Saludable,5
+175,Valle del Cauca,3.4516,-76.5319,4,Masculino,Saludable,5
+176,Nariño,1.2136,-77.2811,25,Femenino,Saludable,11
+177,Valle del Cauca,3.4516,-76.5319,82,Masculino,Hipertensión,1
+178,Bogotá D.C.,4.711,-74.0721,5,Otro,Saludable,2
+179,Nariño,1.2136,-77.2811,23,Femenino,Asma,5
+180,Antioquia,6.2442,-75.5812,94,Otro,Saludable,11
+181,Cundinamarca,4.6814,-74.1371,94,Otro,Diabetes,2
+182,Valle del Cauca,3.4516,-76.5319,52,Masculino,Diabetes,10
+183,Córdoba,8.749,-75.8814,6,Otro,Saludable,10
+184,Nariño,1.2136,-77.2811,9,Otro,Hipertensión,6
+185,Cundinamarca,4.6814,-74.1371,38,Otro,Hipertensión,4
+186,Magdalena,10.591,-74.1869,85,Masculino,Asma,3
+187,Nariño,1.2136,-77.2811,77,Masculino,Hipertensión,7
+188,Atlántico,10.9685,-74.7813,27,Masculino,Asma,10
+189,Cundinamarca,4.6814,-74.1371,41,Femenino,Asma,10
+190,Cundinamarca,4.6814,-74.1371,61,Masculino,Asma,1
+191,Cundinamarca,4.6814,-74.1371,51,Masculino,Saludable,2
+192,Antioquia,6.2442,-75.5812,21,Otro,Hipertensión,9
+193,Santander,7.1254,-73.1198,56,Masculino,Diabetes,11
+194,Bolívar,10.3997,-75.5144,95,Otro,Asma,3
+195,Antioquia,6.2442,-75.5812,10,Masculino,Diabetes,11
+196,Santander,7.1254,-73.1198,13,Masculino,Asma,9
+197,Magdalena,10.591,-74.1869,30,Masculino,Hipertensión,5
+198,Magdalena,10.591,-74.1869,3,Masculino,Saludable,4
+199,Valle del Cauca,3.4516,-76.5319,21,Masculino,Asma,4
+200,Atlántico,10.9685,-74.7813,92,Masculino,Asma,6
