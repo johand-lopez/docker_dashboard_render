@@ -1,5 +1,5 @@
 # ================================
-#  app.py — versión con Plotly choropleth
+#  app.py — Mapa con Plotly mejorado
 # ================================
 
 import streamlit as st
@@ -22,11 +22,13 @@ SHAPEFILE_PATH = "shapefile_departamental/MGN_ADM_DPTO_POLITICO.shp"
 # =========================
 df = pd.read_csv(DATA_PATH)
 gdf = gpd.read_file(SHAPEFILE_PATH)
+
+# Normalización de nombres
 gdf["dpto_cnmbr"] = gdf["dpto_cnmbr"].str.upper()
 df["Departamento"] = df["Departamento"].str.upper()
 
 # =========================
-# Navegación
+# Navegación lateral
 # =========================
 st.sidebar.title("Navegación")
 page = st.sidebar.radio("Ir a:", ["Contexto", "Descriptivos", "Gráficos", "Mapas"])
@@ -41,6 +43,17 @@ if page == "Contexto":
     Esta aplicación analiza datos ficticios de **pacientes de salud en Colombia**.  
     El objetivo es **explorar patrones de diagnóstico, género, edad y frecuencia de visitas médicas**, 
     además de identificar cómo se distribuyen las enfermedades en los departamentos.
+
+    **Variables principales:**
+    - 🆔 **ID**: identificador único de paciente.  
+    - 🗺️ **Departamento**: ubicación geográfica.  
+    - 📍 **Latitud y Longitud**: coordenadas de localización.  
+    - 🎂 **Edad** del paciente.  
+    - 👩‍⚕️ **Género** (Masculino, Femenino, Otro).  
+    - 🏥 **Diagnóstico** (diabetes, hipertensión, asma, etc.).  
+    - 📊 **Frecuencia de visitas** médicas.
+
+    El análisis incluye estadísticas descriptivas, visualizaciones gráficas y un mapa interactivo.
     """)
 
     st.metric("Número de registros", len(df))
@@ -83,10 +96,10 @@ elif page == "Gráficos":
     st.plotly_chart(fig_scatter)
 
 # =========================
-# Página 4: Mapas (con Plotly)
+# Página 4: Mapas
 # =========================
 elif page == "Mapas":
-    st.title("🗺️ Mapa de pacientes por departamento (Plotly)")
+    st.title("🗺️ Mapa de pacientes por departamento")
 
     # Filtros
     col1, col2, col3 = st.columns(3)
@@ -107,7 +120,7 @@ elif page == "Mapas":
             }[x]
         )
 
-    # Filtrado
+    # Filtrado de datos
     df_filtrado = df.copy()
     if diagnostico_sel != "Todos":
         df_filtrado = df_filtrado[df_filtrado["Diagnóstico"] == diagnostico_sel]
@@ -124,21 +137,29 @@ elif page == "Mapas":
     # Unir con shapefile
     gdf_merge = gdf.merge(df_grouped, left_on="dpto_cnmbr", right_on="Departamento", how="left")
 
-    # Convertir a geojson
+    # Reemplazar NaN con 0 para mostrar todos los departamentos
+    for col in ["Num_Pacientes", "Edad", "Frecuencia_Visitas"]:
+        gdf_merge[col] = gdf_merge[col].fillna(0)
+
+    # Convertir a GeoJSON
     geojson = json.loads(gdf_merge.to_json())
 
-    # Crear mapa Plotly
-    fig = px.choropleth(
+    # Crear mapa con Plotly (estilo base)
+    fig = px.choropleth_mapbox(
         gdf_merge,
         geojson=geojson,
         locations="dpto_cnmbr",
         featureidkey="properties.dpto_cnmbr",
         color=metrica_sel,
         color_continuous_scale="RdYlBu",
-        title=f"Distribución de {metrica_sel.lower()} por departamento"
+        hover_name="dpto_cnmbr",
+        hover_data={metrica_sel: True},
+        title=f"Distribución de {metrica_sel.lower()} por departamento",
+        mapbox_style="carto-positron",  # <--- mapa base con nombres de países y relieve
+        zoom=4.2,
+        center={"lat": 4.5709, "lon": -74.2973},
+        opacity=0.9
     )
 
-    fig.update_geos(fitbounds="locations", visible=False)
     fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0})
-
     st.plotly_chart(fig, use_container_width=True)
