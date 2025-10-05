@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.figure_factory as ff
 import folium
-from streamlit_folium import st_folium
 import geopandas as gpd
+from streamlit.components.v1 import html
 
 # =========================
 # Configuración general
@@ -158,8 +158,10 @@ elif page == "Mapas":
 
     st.markdown(f"### Distribución de pacientes ({diagnostico_sel}, {genero_sel}) - {metrica_sel}")
 
+    # Crear mapa
     m1 = folium.Map(location=[4.5709, -74.2973], zoom_start=5, tiles="CartoDB positron")
 
+    # Choropleth
     folium.Choropleth(
         geo_data=gdf_merge_filt,
         data=gdf_merge_filt,
@@ -187,4 +189,6 @@ elif page == "Mapas":
         )
     ).add_to(m1)
 
-    st_folium(m1, width=900, height=600)
+    # ✅ Renderizar el mapa como HTML estático (sin streamlit-folium)
+    map_html = m1._repr_html_()
+    html(map_html, height=600, width=900)
